@@ -1,0 +1,96 @@
+:root {
+    --rgb-purp: 232, 102, 236,;
+    --grey: rgb(201, 200, 200);
+    --pad-between: 0 40px;
+    --radius: 5px;
+    --rgb-purple: rgba(232, 102, 236, 1)
+}
+
+* {
+    background-color: rgb(55, 53, 53); 
+}
+
+/* Header */
+
+h1 {
+    font-size: 200%;
+    margin: 10px 0;
+    text-align: center;
+    color: rgba(var(--rgb-purp) 1);
+}
+
+/* Main */
+
+h2 {
+    font-size: 80%;
+    margin: 20px 150px 30px 150px;
+    text-align: center;
+    color: var(--grey);    
+    font-weight: lighter;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: var(--grey);
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px auto;  
+    width: 100px;  
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: var(--grey);
+    border-width: 1px;
+    border-radius: var(--radius);
+    padding: 5px;
+    font-weight: bolder;
+    color: rgba(var(--rgb-purp) .6);
+}
+
+.card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card-header {
+    box-shadow: inset 0px 0px 8px var(--rgb-purple) , 0 0 15px var(--rgb-purple);
+    color: black;
+}
+
+pre {
+    background-image: linear-gradient(
+        rgba(var(--rgb-purp) .3) 0%,
+        rgba(var(--rgb-purp) .6) 100%
+    );
+    border-radius: var(--radius);
+    color: var(--grey);
+}
+
+h3 {
+    color: rgba(var(--rgb-purp) .6);
+    margin: 5% 0 2% 0;
+    font-size: 80%;
+    font-weight: lighter;
+}
+
+
+h4 {
+    font-size: 100%;
+    margin: 10px 0;
+    text-align: center;
+    color: rgba(var(--rgb-purp) 1);    
+}
